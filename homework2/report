@@ -1,0 +1,24 @@
+Вывод: рекурсивная функция медленнее и требует больше потребления памяти.
+Это связанос тем, что каждый рекурсивный вызов создает новый кадр стека.
+
+Замеры функции factorial:
+n = 8
+Mem usage  13.7 MiB
+Time 0.0020020008087158203 seconds
+n = 100
+Mem usage 13.7 MiB
+Time 0.010024547576904297 seconds
+n = 10000
+Mem usage 14.2 MiB
+Time 1.220850944519043 seconds
+
+Замеры функции factorial_re:
+Mem usage 13.7 MiB
+n = 8
+Time 0.11109614372253418 seconds
+n = 100
+Mem usage 14.1 MiB
+Time 16.92303729057312 seconds
+n = 200
+Mem usage 14.7 MiB
+Time 49.17095899581909 seconds
