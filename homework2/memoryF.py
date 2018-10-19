@@ -2,7 +2,10 @@ from memory_profiler import *
 
 @profile
 def factorial(x):
-    if x < 0:  return ("Not correct input")
+    if type(x) != int:
+        raise TypeError("Некорректный ввод")
+    if x < 0:
+        raise Exception("Некорректный ввод")
     thing = 1
     for i in range(1, x + 1):
         thing *= i

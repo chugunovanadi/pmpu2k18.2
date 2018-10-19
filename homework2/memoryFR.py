@@ -3,6 +3,10 @@ import sys
 
 @profile
 def factorial_re(x):
+    if type(x) != int:
+        raise TypeError("Некорректный ввод")
+    if x < 0:
+        raise Exception("Некорректный ввод")
     return 1 if x == 0 else x * factorial_re(x-1)
 
 if __name__ == '__main__':

@@ -1,5 +1,8 @@
 def pascal_triangle(line):
-    if line <= 0: return ("Tакой строки не существует",)
+    if type(line) != int:
+        raise TypeError("Некорректный ввод")
+    if line <= 0:
+        raise Exception("Некорректный ввод")
     if line == 1: return [[1]]
     initial_triangle = [[1], [1, 1]] 
     rows = [1, 1] 
@@ -8,11 +11,6 @@ def pascal_triangle(line):
         initial_triangle.append(rows)
     return initial_triangle
 
-line = int(input())
-for rows in pascal_triangle(line):
-   print(rows)
-
-
 from unittest import (TestCase, main)
 
 class Tester(TestCase):
@@ -20,6 +18,16 @@ class Tester(TestCase):
         self.assertEqual(pascal_triangle(1), [[1]])
     def test_true_2(self):
         self.assertEqual(pascal_triangle(3), [[1], [1, 1], [1, 2, 1]])
+    def test_zero(self):
+        self.assertRaises(Exception, pascal_triangle, 0)
+    def test_exception(self):
+        self.assertRaises(Exception, pascal_triangle, -1)
+    def test_exception1(self):
+        self.assertRaises(TypeError, pascal_triangle, "Hello")
+    def test_exception2(self):
+        self.assertRaises(TypeError, pascal_triangle, [])
+    def test_exception3(self):
+        self.assertRaises(TypeError, pascal_triangle, 1.3)
 main()
 
 
