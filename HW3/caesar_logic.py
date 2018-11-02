@@ -1,7 +1,7 @@
 def encrypt(offset, text):
     res = []
     if offset > 25 or offset < -25:
-        raise Exception("Ошибочное смешение")
+        raise Exception("Ошибочное смещение")
     for i in text:
         if (not (ord('A') <= ord(i) <= ord('Z')) and
                 not (ord('a') <= ord(i) <= ord('z'))):
