@@ -1,4 +1,4 @@
-from dividers import dividers
+from homework1.dividers import dividers
 
 
 def is_prime(n):

@@ -10,5 +10,5 @@ def rotate(a):
     return new_list
 
 
-a = [1, 2, 3]
+a = []
 print(rotate(a))
