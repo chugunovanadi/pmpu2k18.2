@@ -6,6 +6,5 @@ def is_prime(n):
         return True
     return len(dividers(n)) == 4
 
-
 n = int(input())
 print(is_prime(n))

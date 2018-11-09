@@ -1,6 +1,6 @@
-def palindrome(str):
-    temp = str[::-1]
-    return temp == str
+def palindrome(st):
+    temp = st[::-1]
+    return temp == st
 
 
 s = str(input())
