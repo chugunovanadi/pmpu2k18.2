@@ -6,10 +6,10 @@ public class Employee {
     private int TIMER;
 
 
-    public Employee(String name, double salary_per_hour,int hours){
-        this.WORKER_NAME = name;
-        this.MONEY_HOUR= salary_per_hour;
-        this.TIMER = hours;
+    public Employee(String WORKER_NAME, double MONEY_HOUR,int TIMER){
+        this.WORKER_NAME = WORKER_NAME;
+        this.MONEY_HOUR= MONEY_HOUR;
+        this.TIMER = TIMER;
     }
 
     public String getName(){ return WORKER_NAME;}
