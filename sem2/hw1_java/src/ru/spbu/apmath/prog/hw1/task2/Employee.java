@@ -12,11 +12,11 @@ public class Employee {
         this.TIMER = TIMER;
     }
 
-    public String getName(){ return WORKER_NAME;}
-    public double getSalary_per_hour() {
+    public String getWORKER_NAME(){ return WORKER_NAME;}
+    public double getMONEY_HOUR() {
         return MONEY_HOUR;
     }
-    public int getHours(){ return TIMER; }
+    public int getTIMER(){ return TIMER; }
 
     double MIN_MONEY_HOUR = 70d;
     int NORM_WORKTIME = 40;
