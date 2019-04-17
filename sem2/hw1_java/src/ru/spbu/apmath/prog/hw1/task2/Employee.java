@@ -12,8 +12,8 @@ public class Employee {
         this.TIMER = TIMER;
     }
 
-    public String getWORKER_NAME(){ return WORKER_NAME;}
-    public double getMONEY_HOUR() {
+    public String getWORKERNAME(){ return WORKER_NAME;}
+    public double getMONEYHOUR() {
         return MONEY_HOUR;
     }
     public int getTIMER(){ return TIMER; }
@@ -28,7 +28,7 @@ public class Employee {
         if(TIMER > MAX_TIME  || (MIN_MONEY_HOUR - MONEY_HOUR) > 0.00001d){
             throw new IllegalStateException(); }
         if (TIMER > NORM_WORKTIME  && TIMER< MAX_TIME ){
-            return TIMER*1.5d*MONEY_HOUR; }
+            return (MONEY_HOUR*NORM_WORKTIME + MONEY_HOUR*1.5d*(TIMER - NORM_WORKTIME)); }
         return TIMER*MONEY_HOUR;
     }
 }
