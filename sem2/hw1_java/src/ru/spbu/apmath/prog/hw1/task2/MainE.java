@@ -22,11 +22,11 @@ public class MainE { public static void main(String[] args) {
 
     for(Employee employee:staff){
         try{
-            System.out.println(employee.getWORKER_NAME() + " " + employee.getMONEY_HOUR() + " " +
+            System.out.println(employee.workerName() + " " + employee.moneyHour() + " " +
                     employee.getTIMER() +  " " + employee.getSalary());
 
         }catch (IllegalStateException e){
-            System.out.println(employee.getWORKER_NAME() + " " + employee.getMONEY_HOUR() + " "
+            System.out.println(employee.workerName() + " " + employee.moneyHour() + " "
                     + employee.getTIMER() +  " " + "Ошибка!");
         }
 
