@@ -9,8 +9,8 @@ public class MainL { public static void main(String[] args) {
     lst.add(1);
     lst.add(2);
     lst.add(5);
-    List < Integer > result = Arr.rotate(lst);
-    List < Integer > result2 = Arr.rotate(lst2);
+    List < Integer > result = Nostalgia.rotate(lst);
+    List < Integer > result2 = Nostalgia.rotate(lst2);
     System.out.println(result);
     System.out.println(result2);
 }
