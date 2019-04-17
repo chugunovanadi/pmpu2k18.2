@@ -1,13 +1,17 @@
 package ru.spbu.apmath.prog.hw1.task3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainL { public static void main(String[] args) {
-    ArrayList< Integer > lst = new ArrayList <> ();
+    List< Integer > lst = new ArrayList <> ();
+    List< Integer > lst2 = new ArrayList <> ();
     lst.add(1);
     lst.add(2);
-    lst.add(3);
-    ArrayList < Integer > result =list.rotate(lst);
+    lst.add(5);
+    List < Integer > result = Arr.rotate(lst);
+    List < Integer > result2 = Arr.rotate(lst2);
     System.out.println(result);
+    System.out.println(result2);
 }
 }
