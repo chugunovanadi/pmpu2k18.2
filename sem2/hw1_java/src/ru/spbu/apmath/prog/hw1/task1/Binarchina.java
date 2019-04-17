@@ -7,12 +7,15 @@ public class Binarchina {
     }
 
     public String toBinary(){
+        if (number < 0)
+            throw new ArithmeticException("Неверный ввод. Введите не отрицательное число");
+        int cope = number;
         StringBuilder answer = new StringBuilder();
-        while (number > 0){
-            if (number%2 ==1){
+        while (cope > 0){
+            if (cope%2 ==1){
                 answer.insert(0,'1');
             }else{answer.insert(0,'0');}
-            number = number / 2;
+            cope = cope / 2;
         }
         return answer.toString();
     }
