@@ -12,8 +12,8 @@ public class Employee {
         this.TIMER = TIMER;
     }
 
-    public String getWORKERNAME(){ return WORKER_NAME;}
-    public double getMONEYHOUR() {
+    public String  workerName(){ return WORKER_NAME;}
+    public double  moneyHour() {
         return MONEY_HOUR;
     }
     public int getTIMER(){ return TIMER; }
