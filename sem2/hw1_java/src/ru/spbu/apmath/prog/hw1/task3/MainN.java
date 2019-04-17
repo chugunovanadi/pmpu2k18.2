@@ -3,7 +3,7 @@ package ru.spbu.apmath.prog.hw1.task3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainL { public static void main(String[] args) {
+public class MainN { public static void main(String[] args) {
     List< Integer > lst = new ArrayList <> ();
     List< Integer > lst2 = new ArrayList <> ();
     lst.add(1);
