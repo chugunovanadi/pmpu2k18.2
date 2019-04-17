@@ -3,7 +3,7 @@ package ru.spbu.apmath.prog.hw1.task3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Arr {
+public class Nostalgia {
     public  static List<Integer> rotate(List<Integer> arr){
         if (arr.isEmpty()){
             List<Integer> new_lst = new ArrayList<>();
