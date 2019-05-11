@@ -6,17 +6,17 @@ public class Employee {
     private int TIMER;
 
 
-    public Employee(String name, double salary_per_hour,int hours){
-        this.WORKER_NAME = name;
-        this.MONEY_HOUR= salary_per_hour;
-        this.TIMER = hours;
+    public Employee(String WORKER_NAME, double MONEY_HOUR,int TIMER){
+        this.WORKER_NAME = WORKER_NAME;
+        this.MONEY_HOUR= MONEY_HOUR;
+        this.TIMER = TIMER;
     }
 
-    public String getName(){ return WORKER_NAME;}
-    public double getSalary_per_hour() {
+    public String  workerName(){ return WORKER_NAME;}
+    public double  moneyHour() {
         return MONEY_HOUR;
     }
-    public int getHours(){ return TIMER; }
+    public int getTIMER(){ return TIMER; }
 
     double MIN_MONEY_HOUR = 70d;
     int NORM_WORKTIME = 40;
@@ -28,7 +28,7 @@ public class Employee {
         if(TIMER > MAX_TIME  || (MIN_MONEY_HOUR - MONEY_HOUR) > 0.00001d){
             throw new IllegalStateException(); }
         if (TIMER > NORM_WORKTIME  && TIMER< MAX_TIME ){
-            return TIMER*1.5d*MONEY_HOUR; }
+            return (MONEY_HOUR*NORM_WORKTIME + MONEY_HOUR*1.5d*(TIMER - NORM_WORKTIME)); }
         return TIMER*MONEY_HOUR;
     }
 }

@@ -1,5 +1,4 @@
 package ru.spbu.apmath.prog.hw1.task1;
-
 import java.util.Scanner;
 
 public class MainB {
