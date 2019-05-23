@@ -1,4 +1,4 @@
-//ЧАСТЬ КОДА ВЗЯТА У КОНСТАНТИНА КОГАНА 
+//ЧАСТЬ КОДА ВЗЯТА У КОНСТАНТИНА КОГАНА И У ВАС! 
 package ru.spbu.apmath.prog.hw2.task3;
 
 import java.util.ArrayList;
