@@ -1,3 +1,4 @@
+//ЧАСТЬ КОДА ВЗЯТА У КОНСТАНТИНА КОГАНА 
 package ru.spbu.apmath.prog.hw2.task3;
 
 import java.util.ArrayList;
@@ -5,7 +6,7 @@ import java.util.List;
 
 public class Library {
     private String address;
-    List<Book> books = new ArrayList<>();
+    private List<Book> books = new ArrayList<>();
 
     public Library(String address) {
         this.address = address;
@@ -13,7 +14,7 @@ public class Library {
 
 
     private void addBook(Book book) {
-        if (books.contains(book)) {
+        if (findBook(book.getTitle()) != null) {
             System.out.println("Такая книга уже есть");
         } else {
             books.add(book);
